@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fondo charcoal -->
+  <rect width="64" height="64" fill="#2E2520"/>
+
+  <!-- Línea decorativa superior -->
+  <line x1="14" y1="10" x2="50" y2="10" stroke="#9A9A78" stroke-width="0.8" opacity="0.7"/>
+
+  <!-- Iniciales NL -->
+  <text
+    x="32" y="32"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="20"
+    font-weight="400"
+    letter-spacing="4"
+    fill="#FAF8F3"
+  >NL</text>
+
+  <!-- Divisor -->
+  <line x1="22" y1="38" x2="42" y2="38" stroke="#9A9A78" stroke-width="0.7" opacity="0.6"/>
+
+  <!-- Tijera: hoja izquierda -->
+  <line x1="20" y1="57" x2="32" y2="46" stroke="#9A9A78" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Tijera: hoja derecha -->
+  <line x1="44" y1="57" x2="32" y2="46" stroke="#9A9A78" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Tijera: aro izquierdo -->
+  <circle cx="18" cy="58" r="4" fill="none" stroke="#9A9A78" stroke-width="1.6"/>
+  <!-- Tijera: aro derecho -->
+  <circle cx="46" cy="58" r="4" fill="none" stroke="#9A9A78" stroke-width="1.6"/>
+  <!-- Tijera: punto de cruce -->
+  <circle cx="32" cy="46" r="1.2" fill="#9A9A78"/>
+</svg>
