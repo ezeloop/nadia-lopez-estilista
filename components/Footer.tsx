@@ -17,7 +17,10 @@ export function Footer() {
 
   return (
     <footer
-      style={{ background: "var(--color-charcoal-400)", borderTop: "1px solid rgba(168,152,128,0.1)" }}
+      style={{
+        background: "var(--color-charcoal-400)",
+        borderTop: "1px solid rgba(168,152,128,0.1)",
+      }}
       role="contentinfo"
     >
       <div className="container-site py-16">
@@ -26,19 +29,33 @@ export function Footer() {
           <div>
             <span
               className="text-accent-script block"
-              style={{ fontSize: "2rem", color: "var(--color-cream-50)", lineHeight: 1, marginBottom: "0.5rem" }}
+              style={{
+                fontSize: "2rem",
+                color: "var(--color-cream-50)",
+                lineHeight: 1,
+                marginBottom: "0.5rem",
+              }}
             >
               Nadia López
             </span>
             <span
               className="text-label block"
-              style={{ color: "var(--color-olive-300)", fontSize: "0.58rem", letterSpacing: "0.22em" }}
+              style={{
+                color: "var(--color-olive-300)",
+                fontSize: "0.58rem",
+                letterSpacing: "0.22em",
+              }}
             >
               Estilista Profesional
             </span>
             <p
               className="text-body-sans mt-4"
-              style={{ fontSize: "0.82rem", color: "rgba(253,250,245,0.4)", maxWidth: "28ch", lineHeight: 1.7 }}
+              style={{
+                fontSize: "0.82rem",
+                color: "rgba(253,250,245,0.4)",
+                maxWidth: "28ch",
+                lineHeight: 1.7,
+              }}
             >
               Diseño de color, tratamientos y peinados en Córdoba Capital.
               Atención personalizada, resultados reales.
@@ -59,9 +76,18 @@ export function Footer() {
                   <a
                     href={href}
                     className="text-body-sans"
-                    style={{ fontSize: "0.82rem", color: "rgba(253,250,245,0.5)", textDecoration: "none", transition: "color 0.3s" }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = "var(--color-cream-50)")}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(253,250,245,0.5)")}
+                    style={{
+                      fontSize: "0.82rem",
+                      color: "rgba(253,250,245,0.5)",
+                      textDecoration: "none",
+                      transition: "color 0.3s",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.color = "var(--color-cream-50)")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.color = "rgba(253,250,245,0.5)")
+                    }
                   >
                     {label}
                   </a>
@@ -84,9 +110,16 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-body-sans"
-                style={{ fontSize: "0.82rem", color: "rgba(253,250,245,0.5)", textDecoration: "none", transition: "color 0.3s" }}
+                style={{
+                  fontSize: "0.82rem",
+                  color: "rgba(253,250,245,0.5)",
+                  textDecoration: "none",
+                  transition: "color 0.3s",
+                }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#25D366")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(253,250,245,0.5)")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.color = "rgba(253,250,245,0.5)")
+                }
               >
                 WhatsApp: {CONTACT.whatsappDisplay}
               </a>
@@ -95,11 +128,20 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-body-sans"
-                style={{ fontSize: "0.82rem", color: "rgba(253,250,245,0.5)", textDecoration: "none", transition: "color 0.3s" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--color-cream-50)")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(253,250,245,0.5)")}
+                style={{
+                  fontSize: "0.82rem",
+                  color: "rgba(253,250,245,0.5)",
+                  textDecoration: "none",
+                  transition: "color 0.3s",
+                }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.color = "var(--color-cream-50)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.color = "rgba(253,250,245,0.5)")
+                }
               >
-                Instagram: @nadia.lopez.estilista
+                Instagram: @nadialopez.estilista
               </a>
               <p
                 className="text-body-sans"
@@ -123,9 +165,14 @@ export function Footer() {
         >
           <p
             className="text-label"
-            style={{ color: "rgba(253,250,245,0.2)", fontSize: "0.58rem", textAlign: "center" }}
+            style={{
+              color: "rgba(253,250,245,0.2)",
+              fontSize: "0.58rem",
+              textAlign: "center",
+            }}
           >
-            © {year} Nadia López – Todos los derechos reservados · Córdoba, Argentina
+            © {year} Nadia López – Todos los derechos reservados · Córdoba,
+            Argentina
           </p>
         </div>
       </div>

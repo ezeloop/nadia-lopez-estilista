@@ -182,8 +182,8 @@ export const TESTIMONIALS = [
 
 export const CONTACT = {
   address: "Humberto 1° 3398, Córdoba Capital",
-  whatsapp: "+543516313274",
-  whatsappDisplay: "+54 351 63132 74",
+  whatsapp: "+5493516313274",
+  whatsappDisplay: "+549 351 63132 74",
   instagram: "https://instagram.com/nadialopez.estilista",
   email: "nadialopez1920@gmail.com",
   googleMapsEmbed:

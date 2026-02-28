@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { CONTACT } from "../lib/data";
 
 const NAV_LINKS = [
   { href: "#inicio",       label: "Inicio" },
@@ -27,13 +28,9 @@ export function Navbar() {
       <motion.header
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          background: scrolled
-            ? "rgba(253,250,245,0.92)"
-            : "transparent",
+          background: scrolled ? "rgba(253,250,245,0.92)" : "transparent",
           backdropFilter: scrolled ? "blur(12px)" : "none",
-          borderBottom: scrolled
-            ? "1px solid rgba(168,152,128,0.15)"
-            : "none",
+          borderBottom: scrolled ? "1px solid rgba(168,152,128,0.15)" : "none",
         }}
         initial={{ y: -80 }}
         animate={{ y: 0 }}
@@ -69,7 +66,10 @@ export function Navbar() {
           </Link>
 
           {/* Nav desktop */}
-          <nav className="hidden lg:flex items-center gap-8" aria-label="Navegación principal">
+          <nav
+            className="hidden lg:flex items-center gap-8"
+            aria-label="Navegación principal"
+          >
             {NAV_LINKS.map(({ href, label }) => (
               <a
                 key={href}
@@ -94,7 +94,7 @@ export function Navbar() {
           {/* CTA + Hamburger */}
           <div className="flex items-center gap-4">
             <a
-              href="https://wa.me/543513000000"
+              href={`https://wa.me/${CONTACT.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden lg:inline-flex btn-primary"
@@ -164,7 +164,7 @@ export function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="https://wa.me/543513000000"
+                href={`https://wa.me/${CONTACT.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary mt-4"

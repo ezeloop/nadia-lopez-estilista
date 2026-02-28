@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { LoadingScreen } from "@/components/LoadingScreen";
 
 export const metadata: Metadata = {
   icons: {
@@ -64,6 +65,7 @@ export default function RootLayout({
         />
       </head>
       <body className="grain-overlay antialiased">
+        <LoadingScreen />
         {children}
       </body>
     </html>
