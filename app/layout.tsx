@@ -3,6 +3,7 @@ import "./globals.css";
 import { LoadingScreen } from "@/components/LoadingScreen";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nadia-lopez-estilista.vercel.app"),
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

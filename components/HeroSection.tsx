@@ -44,7 +44,10 @@ export function HeroSection() {
         transition={{ delay: 1.8, duration: 1 }}
         aria-hidden="true"
       >
-        <div className="w-px h-20" style={{ background: "var(--color-olive-200)" }} />
+        <div
+          className="w-px h-20"
+          style={{ background: "var(--color-olive-200)" }}
+        />
         <span
           className="text-label"
           style={{
@@ -56,7 +59,10 @@ export function HeroSection() {
         >
           Córdoba, Argentina
         </span>
-        <div className="w-px h-20" style={{ background: "var(--color-olive-200)" }} />
+        <div
+          className="w-px h-20"
+          style={{ background: "var(--color-olive-200)" }}
+        />
       </motion.div>
 
       {/* ── Layout principal ─────────────────────────────────────── */}
@@ -132,7 +138,13 @@ export function HeroSection() {
               className="btn-primary"
             >
               <span>Consultá disponibilidad</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
                 <path
                   d="M7 17L17 7M17 7H7M17 7v10"
                   stroke="currentColor"
@@ -161,13 +173,20 @@ export function HeroSection() {
               <div key={label}>
                 <div
                   className="text-display"
-                  style={{ fontSize: "1.6rem", color: "var(--color-charcoal-200)", lineHeight: 1 }}
+                  style={{
+                    fontSize: "1.6rem",
+                    color: "var(--color-charcoal-200)",
+                    lineHeight: 1,
+                  }}
                 >
                   {value}
                 </div>
                 <div
                   className="text-label"
-                  style={{ color: "var(--color-olive-300)", marginTop: "0.3rem" }}
+                  style={{
+                    color: "var(--color-olive-300)",
+                    marginTop: "0.3rem",
+                  }}
                 >
                   {label}
                 </div>
@@ -182,7 +201,11 @@ export function HeroSection() {
           style={{ height: "clamp(300px, 70vw, 700px)" }}
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.3 }}
+          transition={{
+            duration: 1.2,
+            ease: [0.25, 0.46, 0.45, 0.94],
+            delay: 0.3,
+          }}
         >
           {/* Halo decorativo detrás de la foto */}
           <div
@@ -216,7 +239,8 @@ export function HeroSection() {
               height: "90%",
               borderRadius: "40% 60% 58% 42% / 44% 42% 58% 56%",
               overflow: "hidden",
-              boxShadow: "0 24px 60px rgba(60,50,40,0.22), 0 4px 16px rgba(60,50,40,0.1)",
+              boxShadow:
+                "0 24px 60px rgba(60,50,40,0.22), 0 4px 16px rgba(60,50,40,0.1)",
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -261,13 +285,20 @@ export function HeroSection() {
           >
             <p
               className="text-label"
-              style={{ color: "var(--color-olive-400)", fontSize: "0.55rem", marginBottom: "0.2rem" }}
+              style={{
+                color: "var(--color-olive-400)",
+                fontSize: "0.55rem",
+                marginBottom: "0.2rem",
+              }}
             >
               Especialidad
             </p>
             <p
               className="text-display"
-              style={{ color: "var(--color-charcoal-300)", fontSize: "0.88rem" }}
+              style={{
+                color: "var(--color-charcoal-300)",
+                fontSize: "0.88rem",
+              }}
             >
               Color & Peinado
             </p>
@@ -291,13 +322,21 @@ export function HeroSection() {
           >
             <span
               className="text-display"
-              style={{ color: "var(--color-cream-50)", fontSize: "1.3rem", lineHeight: 1 }}
+              style={{
+                color: "var(--color-cream-50)",
+                fontSize: "1.3rem",
+                lineHeight: 1,
+              }}
             >
               5★
             </span>
             <span
               className="text-label"
-              style={{ color: "rgba(255,252,240,0.8)", fontSize: "0.5rem", marginTop: "0.15rem" }}
+              style={{
+                color: "rgba(255,252,240,0.8)",
+                fontSize: "0.5rem",
+                marginTop: "0.15rem",
+              }}
             >
               Calificación
             </span>
@@ -313,9 +352,6 @@ export function HeroSection() {
         transition={{ delay: 2, duration: 1 }}
         aria-hidden="true"
       >
-        <span className="text-label" style={{ color: "var(--color-olive-300)", fontSize: "0.58rem" }}>
-          Scroll
-        </span>
         <motion.div
           className="w-px h-10"
           style={{ background: "var(--color-olive-200)" }}
